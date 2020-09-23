@@ -25,7 +25,7 @@ github_username:  androidexplained
 
 # Build settings
 markdown: kramdown
-theme: jekyll-theme-yat
+remote_theme:: jeffreytse/jekyll-theme-yat
 plugins:
   - jekyll-feed
 
