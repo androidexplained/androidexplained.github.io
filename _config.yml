@@ -22,12 +22,15 @@ description: >- # this means to ignore newlines until "baseurl:"
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://androidexplained.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
 github_username:  androidexplained
-
+tagline: Android app development articles for beginner and advanced learners. Topics covering Security, Material Design, Firebase, Maps, Cloud Connectivity, RxJava, MVM, MVP, Dagger, Storage,, MySQL, Realm and more.
+google_site_verification: google71393c6b85643b61.html
 # Build settings
 markdown: kramdown
 remote_theme: jeffreytse/jekyll-theme-yat
 plugins:
   - jekyll-feed
+  - jekyll-seo-tag
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list

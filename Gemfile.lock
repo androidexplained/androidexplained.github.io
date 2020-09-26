@@ -19,7 +19,7 @@ GEM
     concurrent-ruby (1.1.7)
     dnsruby (1.61.4)
       simpleidn (~> 0.1)
-    em-websocket (0.5.1)
+    em-websocket (0.5.2)
       eventmachine (>= 0.12.9)
       http_parser.rb (~> 0.6.0)
     ethon (0.12.0)
@@ -269,14 +269,12 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  jekyll (~> 3.9.0)
-  jekyll-feed (~> 0.6)
+  jekyll-feed (~> 0.12)
+  jekyll-seo-tag (~> 2.6.1)
   jekyll-theme-yat
-  kramdown-parser-gfm
-  minima (~> 2.0)
   tzinfo (~> 1.2)
   tzinfo-data
-  wdm (~> 0.1.0)
+  wdm (~> 0.1.1)
 
 BUNDLED WITH
    2.1.4
