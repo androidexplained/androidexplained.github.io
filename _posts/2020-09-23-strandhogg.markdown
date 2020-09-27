@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Strandhogg Vulnerability Explained"
+title:  "Strandhogg Vulnerability"
 date:   2020-09-23 21:50:30 +0200
 categories: security android malware
 ---
@@ -56,6 +56,9 @@ According to [Promon] all versions up to Android 9 included are affected
 As with Strandhogg 1.0 one can use [Promon] product called Shielder SDK.
 Alternatively the protection involves adding `singleTask` or `singleInstance` attributes to every public activity of your app (activity that can be launched by other apps - either one that contains `intent-filter` or has the `exported` attribute set to `true`).
 This can also have undesired side-effects, make sure to thoroughly test your application when applying this fix.
+
+Resources:
+<https://promon.co/>
 
 [Viking tactic consisting of coastal raids]: https://en.wikipedia.org/wiki/Strandh%C3%B6gg
 [Promon]: https://promon.co/

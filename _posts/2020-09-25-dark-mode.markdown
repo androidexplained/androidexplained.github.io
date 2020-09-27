@@ -1,0 +1,97 @@
+---
+layout: post
+title:  "Dark Theme Support"
+date:   2020-09-24 21:50:30 +0200
+categories: ui android material-design
+---
+
+In this article I'll try to explain how to support Dark Theme in your Android App. <br />
+Dark Theme has been introduced starting with **Android 10 (API level 29)** <br /><br />
+According to Google it has many benefits:
+* reduced power consumption
+* easier usage to use in low-light environment
+* reduced eye strain for users who are sensitive to bright light
+
+There are two ways you can turn on `Dark Theme` as a user:
+* using system-setting (**Settings -> Display -> Theme**)
+* using quick settings tile in the notification tray
+
+Below you can find steps which will allow your app to come to the **dark side**
+
+### Inherit from DayNight theme
+First thing you will need to do is to make sure your theme inherits from `DayNight` theme. <br />
+After you're done, the theme should look like the following:
+
+~~~
+<style name="AppTheme" parent="Theme.AppCompat.DayNight">
+~~~
+{: .language-xml}
+
+Essentially the `DayNight` theme works with two directories - `Light` theme inside `values` directory and `Dark` inside `values-night` directory.
+
+Therefore whenever you want to use different resource values, depending on the theme, you need to declare that resource in both above directories. <br />
+
+For instance you could create two different color resources like this:
+
+`values/colors.xml`
+~~~
+<color name="colorPrimary">#f2f2f2</color>
+<color name="colorPrimaryDark">#000000</color>
+<color name="colorAccent">#29b6f6</color>
+~~~
+{: .language-xml}
+
+`values-night/colors.xml`
+~~~
+<color name="colorPrimary">#2e2f32</color>
+<color name="colorPrimaryDark">#121212</color>
+<color name="colorAccent">#90caf9</color>
+~~~
+{: .language-xml}
+
+It is worth noting that Android Studio provides an user-friendly way to create such additional resources. All you have to do is:
+1. right click anywhere inside your project view on the left hand-side
+2. go through **New -> Android Resource File**
+3. then from the `Available Qualifiers` pick `Night Mode`
+
+<img src="{{site.baseurl}}/images/night_mode_res.png">
+
+After you click **OK**, the resource will be created for you and placed in relevant directory.
+
+### Use theme attributes
+It is important to **avoid** hard-coding colors or icons when creating layouts and styles. <br />
+Instead it is recommended to use theme attributes or night-qualified resources.
+
+In other words when creating a layout instead of hard-coding color
+~~~
+<View
+  android:background="@color/black" />
+~~~
+{: .language-xml}
+
+It is recommended to use a theme attributes
+~~~
+<View
+  android:background="?attr/colorSurface" />
+~~~
+{: .language-xml}
+
+The second approach above allows you to vary the color by theme, whereas in the first one it would be hard-coded and remain the **same** between Dark & Light themes. <br />
+Alternatively you could declare color `black` in `res/values/colors.xml` and `res/values-night/colors.xml` however this approach is not recommended because you could end up with color `black` being white in Light theme which is not logical. <br /> <br />
+Themed-attributes provide a more **semantic**, **meaningful** names that make sense for both themes.
+
+### Change themes in the app itself
+Apart from changing the theme based on the system setting you may want to allow the user to change theme specifically for your app.
+
+There are three options (along with modes) that you can use in your app:
+* light - `AppCompatDelegate.MODE_NIGHT_NO`
+* dark - `AppCompatDelegate.MODE_NIGHT_YES`
+* system default - `AppCompatDelegate.MODE_NIGHT_FOLLOW_SYSTEM`
+
+To switch the theme all you have to do is to call `AppCompatDelegate.setDefaultNightMode()` passing relevant `AppCompatDelegate` mode.
+
+
+That's all, your app now supports the `Dark Theme`
+
+Resources: <br>
+<https://developer.android.com/guide/topics/ui/look-and-feel/darktheme>
