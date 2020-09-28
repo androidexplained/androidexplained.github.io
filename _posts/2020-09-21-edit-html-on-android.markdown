@@ -23,8 +23,10 @@ For more details on how you can use Chrome Dev Tools on Android I refer you to t
 It is worth noting that this solution doesn't offer as much options as Chrome Dev Tools do, however you can use the app whenever you want without being connected to your PC.<br />
 I wasn't expecting a full feature-set either, since most desktop apps on mobile usually have simplified functionality.
 
-Okay so now let's go through what you can do with `HTML Website Inspector` <br />
-When you launch the app you can see it is essentially a browser
+Okay so now let's go through what you can do with `HTML Website Inspector`
+
+
+When you launch the app you can see it is essentially a browser.
 
 <img src="{{site.baseurl}}/images/html-website-inspector.png">
 
