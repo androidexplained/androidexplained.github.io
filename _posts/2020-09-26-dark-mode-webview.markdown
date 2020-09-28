@@ -6,7 +6,7 @@ categories: ui android material-design
 ---
 
 In the previous post we've looked at how we can add **Dark Theme** support to our app.<br />
-Full of hope you tried to test your app and everything we well until you stumble upon a **Webview...** <br />
+Full of hope you tried to test your app and everything went well until you stumble upon a **Webview...** <br />
 By default **Webview** will assume **Light** theme version, breaking your dark theme user experience. <br /> <br />
 Terrible, I know - fortunately for you I'm going to look at how to add **Dark Theme** support to **Webview** as well.
 
