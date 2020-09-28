@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Website debugging on Android"
-date:   2020-09-24 21:50:30 +0200
+date:   2020-09-22 21:50:30 +0200
 categories: android
 ---
 
