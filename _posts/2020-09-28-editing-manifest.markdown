@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Editing AndroidManifest.xml file"
+title:  "Editing AndroidManifest.xml File"
 date:   2020-09-28 21:50:30 +0200
 categories: android gradle
 ---
