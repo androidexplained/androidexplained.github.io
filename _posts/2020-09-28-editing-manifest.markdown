@@ -22,7 +22,7 @@ You have two options here:
 
 * file in build directory - as part of every build merged manifest is generated and saved in `$projectDir/app/build/intermediates/merged_manifests/$flavor/AndroidManifest.xml`
 
-## Editing AndroidManifest.xml file
+## Editing Merged Manifest
 Now that we know how to find it, we can finally start editing our **merged manifest!** <br />
 For the purpose of this article we will do something very simple - we'll replace the application name with our custom name, in my case it will be `Broccoli`
 
