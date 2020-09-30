@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Website debugging on Android"
+title:  "Editing Website HTML On Android"
 date:   2020-09-22 21:50:30 +0200
 categories: android
 ---
