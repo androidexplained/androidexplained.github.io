@@ -7,7 +7,7 @@ categories: android room
 
 Not that long ago I wanted to implement Backup & Restore features in my new application called [Notably Notepad](https://play.google.com/store/apps/details?id=com.notepad.notably). <br />
 I thought such basic features will be well-documented and supported - I mean every app  containing a database would want to allow the user to move his data to a new phone. <br />
-Yet again I was wrong, there is very little information about how to perform backup of Room Database and nothing in official android documentation.<br />
+Yet again I was wrong, there is very little information about how to perform backup of **Room Database** and nothing in official android documentation.<br />
 
 The information that is available is incomplete, at least in my case, it wasn't working - I had to compile information from many sources in order to get my code working. <br /> <br />
 Which why I wrote this article, hopefully someone will find it helpful.
