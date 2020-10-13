@@ -8,7 +8,7 @@ This post will be a little different... <br />
 I won't make this a secret - I am an indie developer. In my lifetime I have created probably around 35 apps.<br />
 You can have a look at [my developer account](https://play.google.com/store/apps/dev?id=6178411479367698437) - right now I have closer to 10 apps since not all of them proved successful enough for me to keep supporting them.
 
-After making all these apps I have found what things work and which don't.<br />
+After making all these apps I have found that some things worked for me and some didn't.<br />
 In this post I will share all of the things I'm doing whenever launching an app.
 
 Since there is a lot of things I want to talk about I will group them into two main categories
