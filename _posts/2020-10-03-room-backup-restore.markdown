@@ -88,6 +88,16 @@ fun tryOpenFile() {
 
 The important part would be to set the intent `type` and pass `EXTRA_MIME_TYPES` to limit files visible by the user to those that are an `application/octet-stream`, which is the type used for database files.
 
+The last step is to replace the database file
+
+~~~
+File(database.openHelper.writableDatabase.path)
+~~~
+{: .language-kotlin}
+
+with the file that the user picked.
+
+
 
 That's all you need to add **backup and restore** features to your application!
 
