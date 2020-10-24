@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Improving EditText & Spannable Performance"
+title:  "Improving TextView & Spannable Performance"
 date:   2020-10-12 21:50:30 +0200
 categories: android ui
 ---
