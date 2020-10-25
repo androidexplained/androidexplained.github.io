@@ -5,7 +5,7 @@ date:   2020-10-21 21:50:30 +0200
 categories: android ui
 ---
 
-In previous post we have looked at how we can improve performance when working with **TextView** and **Spannable**.
+In previous post we have looked at how we can improve performance when working with **TextView** and **Spannables**.
 
 In this post we will explore ways to make setting of text on **TextView** faster.
 
@@ -23,7 +23,7 @@ In simple terms **PrecomputedText** is a text object that contains both the text
 In order to create **PrecomputedText** we need to pass the text and **TextMetricsParams** of the target **TextView** to `PrecomputedTextCompat.create` method.
 Since it does heavy text layout measurements its best to call it from a background thread.
 
-In the below code snippet we can see a full example using [Kotlin coroutines](https://github.com/Kotlin/kotlinx.coroutines)
+In the below code snippet we can see a full working example using [Kotlin coroutines](https://github.com/Kotlin/kotlinx.coroutines)
 
 ~~~
 private fun TextView.setTextAsync(text: String) {
