@@ -26,9 +26,9 @@ Since it does heavy text layout measurements its best to call it from a backgrou
 In the below code snippet we can see a full working example using [Kotlin coroutines](https://github.com/Kotlin/kotlinx.coroutines)
 
 ~~~
-private fun TextView.setTextAsync(text: String) {
+fun TextView.setTextAsync(text: String) {
     val textView = this
-    lifecycleScope.launch {
+    (context as? AppCompatActivity)?.lifecycleScope?.launch {
         val params = TextViewCompat.getTextMetricsParams(textView)
         val precomputedText = withContext(Dispatchers.Default) {
             PrecomputedTextCompat.create(text, params)
