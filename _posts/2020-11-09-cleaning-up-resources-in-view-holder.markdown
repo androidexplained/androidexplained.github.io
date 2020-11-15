@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Cleaning up resources in RecyclerView ViewHolder"
-date:   2020-10-21 21:50:30 +0200
+date:   2020-11-09 21:50:30 +0200
 categories: android ui
 ---
 
