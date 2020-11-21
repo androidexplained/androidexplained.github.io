@@ -20,7 +20,7 @@ description: >- # this means to ignore newlines until "baseurl:"
  Android app development articles for beginner and advanced learners.
  Topics covering Security, Material Design, Firebase, Maps, Cloud Connectivity, RxJava, MVM, MVP, Dagger, Storage, MySQL, Realm and more.
 baseurl: # the subpath of your site, e.g. /blog
-url: https://androidexplained.github.io/ # the base hostname & protocol for your site, e.g. http://example.com
+url: https://androidexplained.github.io/
 github_username:  androidexplained
 google_site_verification: google71393c6b85643b61.html
 logo: /presentation/logo.png
