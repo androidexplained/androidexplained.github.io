@@ -54,5 +54,5 @@ recyclerView.recycledViewPool.setMaxRecycledViews(VIEW_TYPE, POOL_SIZE)
 
 
 <br /> <br />
-That's all! <br />
+That's all! You can finally enjoy the smooth scrolling experience in your app!<br />
 In this article we have learned how to optimize **RecyclerView** using **RecyclerView.RecycledViewPool**!
